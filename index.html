@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Buddy</h1>
+        <p>Your AI-powered student assistant 💙</p>
+    </header>
+
+    <main>
+        <!-- Study Resources -->
+        <section id="resources">
+            <h2>Study Resources</h2>
+            <input type="text" id="topicInput" placeholder="Enter topic">
+            <button onclick="getResources()">Get Resources</button>
+            <ul id="resourceList"></ul>
+        </section>
+
+        <!-- AI Doubt Solver -->
+        <section id="ai-doubt">
+            <h2>AI Doubt Solver</h2>
+            <input type="text" id="doubtInput" placeholder="Type your question">
+            <button onclick="askDoubt()">Ask AI</button>
+            <p id="doubtAnswer"></p>
+        </section>
+
+        <!-- Motivation & Focus Music -->
+        <section id="motivation">
+            <h2>Motivation & Focus</h2>
+            <button onclick="getMotivation()">Get Motivation</button>
+            <p id="motivationText"></p>
+
+            <button onclick="getFocusMusic()">Focus Music</button>
+            <p id="musicLink"></p>
+        </section>
+
+        <!-- Timer Simulation -->
+        <section id="timer">
+            <h2>Focus Timer</h2>
+            <button onclick="startTimer()">Start 5-sec Focus Session</button>
+            <p id="timerText"></p>
+        </section>
+
+        <!-- Login Simulation -->
+        <section id="login">
+            <h2>Login / Signup</h2>
+            <button onclick="login()">Login</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
